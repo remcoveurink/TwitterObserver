@@ -8,10 +8,10 @@ public class App {
 		TwitterUser mark = new Teacher("Mark");
 
 		// Init all observers
-		IFollower luuk = new Student("Luuk");
-		IFollower marco = new Teacher("Marco");
-		IFollower barbara = new Student("Barbara");
-		IFollower ingrid = new Student("Ingrid");
+		Follower luuk = new Student("Luuk");
+		Follower marco = new Teacher("Marco");
+		Follower barbara = new Student("Barbara");
+		Follower ingrid = new Student("Ingrid");
 
 		// Add observers to observables
 		michel.addFollower(luuk);

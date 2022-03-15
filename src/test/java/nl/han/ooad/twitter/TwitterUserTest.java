@@ -28,7 +28,7 @@ public class TwitterUserTest {
 
 	@Test
 	public void testOneTeacher() {
-		IFollower follower = new Teacher("f");
+		Follower follower = new Teacher("f");
 		user.addFollower(follower);
 		user.tweet("msg");
 		assertEquals("(f) - @user tweets: msg", follower.getLastTweet());
@@ -50,7 +50,7 @@ public class TwitterUserTest {
 		Follower follower1 = new Student("f");
 		user.addFollower(follower1);
 		
-		IFollower follower2 = new Teacher("g");
+		Follower follower2 = new Teacher("g");
 		user.addFollower(follower2);
 		
 		user.tweet("msg");

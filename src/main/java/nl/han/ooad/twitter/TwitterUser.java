@@ -6,7 +6,7 @@ public class TwitterUser {
 
 	protected String id;
 	private TweetDateFormatter dateFormatter = new TweetDateFormatter();
-	private ArrayList<IFollower> followers = new ArrayList<IFollower>();
+	private ArrayList<Follower> followers = new ArrayList<Follower>();
 	
 	String lastTweet = null;
 	
@@ -26,16 +26,16 @@ public class TwitterUser {
 	}
 
 	private void notifyFollowers(String tweet) {
-		for (IFollower follower : followers) {
+		for (Follower follower : followers) {
 			follower.update(this, tweet);
 		}
 	}
 
-	public void addFollower(IFollower follower) {
+	public void addFollower(Follower follower) {
 		followers.add(follower);
 	}
 
-	public void removeFollower(IFollower follower) {
+	public void removeFollower(Follower follower) {
 		followers.remove(follower);
 	}
 

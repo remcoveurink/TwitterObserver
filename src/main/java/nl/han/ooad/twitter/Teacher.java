@@ -3,7 +3,7 @@ package nl.han.ooad.twitter;
 /**
  * Created by Michel Koolwaaij on 14-03-20.
  */
-public class Teacher extends TwitterUser implements IFollower {
+public class Teacher extends TwitterUser implements Follower {
 
     public Teacher(String id) {
         super (id);
